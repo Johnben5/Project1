@@ -4,3 +4,245 @@
     box-sizing: border-box;
 }
 
+.page {
+    text-align: center;
+    font-family: 'Courier New';
+    font-size: 20px;
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 2em;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    font-size: 1em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    padding-top: 7px;
+    font-size: .8em;
+}
+
+a {
+    color: black;
+}
+
+.navbar {
+    background-color: #003366 !important;
+}
+
+.footer {
+    background-color: #003366;
+    color: #f2f2f2;
+}
+
+.footer a {
+    color: #f2f2f2;
+}
+
+
+/* Home */
+.long-photo {
+    max-height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.long-photo-margin {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr;
+    grid-column-gap: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.grid a {
+    color: black;
+}
+
+/* destinations */
+.destination-grid {
+    display: grid;
+    grid-template: auto auto auto auto auto / 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 10px;
+}
+
+/* cruises */
+.cruise-text {
+    text-align: left;
+    margin-left: 15px;
+}
+
+h4, h5 {
+    font-family: fantasy;
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+
+ul {
+    margin-left: 40px;
+    font-family: Calibri;
+}
+
+/* tours */
+.tour-grid {
+    margin: auto;
+    width: 70%;
+}
+
+.tour-grid img {
+    margin-top: 10px;
+}
+
+.details {
+    margin-bottom: 20px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 760px) {
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    .grid {
+        grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .long-photo {
+        height: 350px;
+    }
+
+    .destination-grid {
+        grid-template: auto auto auto auto auto / 1fr 1fr;
+    }
+
+     .destination-grid img {
+        object-fit: cover;
+        height: 270px;
+    }
+
+    .cruise-container {
+        justify-content: flex-start;
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .cruise-container img {
+        width: 450px;
+    }
+
+    .cruise-text {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .tour-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        width: 100%;
+    }
+
+    .tour-grid img {
+        height: 160px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .content {
+        margin: 0 10px;
+    }
+
+    .tour-grid img {
+        max-height: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    .page {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .long-photo {
+        height: 350px;
+    }
+
+    .grid {
+        grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .destination-grid {
+        grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+    }
+
+    .destination-grid img {
+        object-fit: cover;
+        height: 220px;
+    }
+
+    .cruise-container {
+        justify-content: flex-start;
+        display: flex;
+        margin-bottom: 25px;
+    }
+
+    .cruise-container img {
+        width: 600px;
+    }
+
+    .cruise-text {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .tour-grid {
+        display: grid;
+        grid-template: auto auto auto auto auto / 1fr 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 0px;
+        width: 100%;
+    }
+
+    .tour-grid img {
+        max-height: 180px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    h5 {
+        padding-top: 30px;
+    }
+}
